@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  /* hero-section */
+.hero img{
+    width:100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.hero div{
+    width: 90%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    font-weight: 400;
+    transform: translate(-50%, -50%);
+}
+.hero span{
+    font-size: small;
+}
+
+ /* black-box */
+.black-box{
+    background-color: #000;
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+.black-box span{
+    font-size: 80px;
+}
+
+/* cards */
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.card-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.card-container-col{
+    flex-basis: 35%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid none;
+}
+.card-container-col img{
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: rgb(17, 15, 15);
+}
+.card-container-col h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+ /* bottom section */
+.bottom-col{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.bottom-section .contact{
+    background-color: brown;
+}
+.bottom-section .about_me{
+    background-color: chocolate;
+}
+@media screen and (max-width: 786px){
+    .hero{
+        min-height: 50vh;
+    }
+    .black-box{
+        font-size: 24px;
+    }
+    .bottom-section{
+        flex-direction: column;
+    }
+}
